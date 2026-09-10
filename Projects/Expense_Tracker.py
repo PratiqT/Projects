@@ -1,8 +1,7 @@
 
 expenses = []
-
+#Total expense calculate and print
 def total_expense():
-    global expenses
     amount = 0
     for expense in expenses:
         amount += expense["amount"]
