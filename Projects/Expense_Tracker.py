@@ -23,7 +23,7 @@ def add_expense():
         "description": description,
     }
     expenses.append(entry)
-    print("expense added successfully")
+    print("expense added successfully\n")
 def daily():
     dtravel = int(input("how much did you spend on TRAVEL today? "))
     dfood = int(input("how much did you spend on FOOD today? "))
