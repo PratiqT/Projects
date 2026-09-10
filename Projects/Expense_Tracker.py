@@ -5,7 +5,7 @@ def total_expense():
     amount = 0
     for expense in expenses:
         amount += expense["amount"]
-        print(amount)           
+        print(f"Your total Expense:{amount}\n\n")           
 def add_expense():
     global expenses
 
@@ -51,7 +51,7 @@ def main():
     try:
 
         while True:
-
+            print("What do you want to do? ")
             print("1.Add Expense")
             print("2.Show totalExpense")
             what = input("> ")
