@@ -1,6 +1,9 @@
 
 expenses = []
 
+def total_expense():
+    global expenses
+    
 
 def add_expense():
     global expenses
