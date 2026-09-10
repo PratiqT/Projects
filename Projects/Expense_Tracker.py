@@ -5,12 +5,7 @@ def total_expense():
     amount = 0
     for expense in expenses:
         amount += expense["amount"]
-        print(amount)
-        
-           
-
-    
-
+        print(amount)           
 def add_expense():
     global expenses
 
@@ -52,22 +47,20 @@ def monthly():
          print("Warning: You are spending a lot!")
     else:
         print("you are safe")  
-what = input("What did you spend on? ")
-what = what.lower()
-if what.startswith("1"):
-    daily()
-elif what.startswith("2"):
-    monthly()
-elif what.startswith("3"):
-    add_expense()
-elif what.startswith("4"):
-    total_expense()
-elif what.startswith("5"):
-    ...
-elif what.startswith("6"):
-    where = input("Input where did you spend: ")
-else:
-    print("Please enter valid values ")
+
+while True:
+
+    what = input("What do you want to do? ")
+    print("1.Add Expense")
+    print("2.Show totalExpense")
+    if what.startswith("1"):
+        add_expense()
+    elif what.startswith("2"):
+        total_expense()
+    
+
+
+
 
 
         
