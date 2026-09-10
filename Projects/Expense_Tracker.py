@@ -3,7 +3,8 @@ expenses = []
 
 def total_expense():
     global expenses
-    
+    for expense in expenses:
+        print('expense["Category"]')
 
 def add_expense():
     global expenses
@@ -55,7 +56,7 @@ elif what.startswith("2"):
 elif what.startswith("3"):
     add_expense()
 elif what.startswith("4"):
-    ...
+    total_expense()
 elif what.startswith("5"):
     ...
 elif what.startswith("6"):
