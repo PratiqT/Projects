@@ -53,7 +53,7 @@ def main():
         while True:
             print("What do you want to do? ")
             print("1.Add Expense")
-            print("2.Show totalExpense")
+            print("2.Show total Expense")
             what = input("> ")
 
             if what.startswith("1"):
@@ -65,6 +65,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# start with index you snd whatapp
 
 
 
