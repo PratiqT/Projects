@@ -47,19 +47,22 @@ def monthly():
          print("Warning: You are spending a lot!")
     else:
         print("you are safe")  
+def main():
 
-while True:
+    while True:
 
-    print("1.Add Expense")
-    print("2.Show totalExpense")
-    what = input("> ")
+        print("1.Add Expense")
+        print("2.Show totalExpense")
+        what = input("> ")
 
-    if what.startswith("1"):
-        add_expense()
-    elif what.startswith("2"):
-        total_expense()
-    
+        if what.startswith("1"):
+            add_expense()
+        elif what.startswith("2"):
+            total_expense()
 
+
+if __name__ == "__name__":
+    main()
 
 
 
