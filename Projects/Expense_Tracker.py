@@ -5,7 +5,7 @@ def total_expense():
     amount = 0
     for expense in expenses:
         amount += expense["amount"]
-        print(f"Your total Expense:{amount}\n\n")           
+        print(f"Your total Expense: {amount}\n\n")           
 def add_expense():
     global expenses
 
