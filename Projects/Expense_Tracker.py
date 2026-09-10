@@ -5,9 +5,9 @@ def total_expense():
     global expenses
     amount = 0
     for expense in expenses:
-        for spend in expense["amount"]:
-            amount += spend
-            print(amount)
+        amount += expense["amount"]
+        print(amount)
+        
            
 
     
