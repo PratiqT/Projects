@@ -50,9 +50,10 @@ def monthly():
 
 while True:
 
-    what = input("What do you want to do? ")
     print("1.Add Expense")
     print("2.Show totalExpense")
+    what = input("> ")
+
     if what.startswith("1"):
         add_expense()
     elif what.startswith("2"):
