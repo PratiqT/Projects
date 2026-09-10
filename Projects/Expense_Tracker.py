@@ -60,10 +60,10 @@ def main():
                 add_expense()
             elif what.startswith("2"):
                 total_expense()
-    except EOFError:
+    except KeyboardInterrupt:
         print("Thanks for using!")
 
-if __name__ == "__name__":
+if __name__ == "__main__":
     main()
 
 
