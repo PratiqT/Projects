@@ -48,18 +48,20 @@ def monthly():
     else:
         print("you are safe")  
 def main():
+    try:
 
-    while True:
+        while True:
 
-        print("1.Add Expense")
-        print("2.Show totalExpense")
-        what = input("> ")
+            print("1.Add Expense")
+            print("2.Show totalExpense")
+            what = input("> ")
 
-        if what.startswith("1"):
-            add_expense()
-        elif what.startswith("2"):
-            total_expense()
-
+            if what.startswith("1"):
+                add_expense()
+            elif what.startswith("2"):
+                total_expense()
+    except EOFError:
+        print("Thanks for using!")
 
 if __name__ == "__name__":
     main()
