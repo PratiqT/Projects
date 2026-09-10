@@ -3,8 +3,12 @@ expenses = []
 
 def total_expense():
     global expenses
+    add_expense()
     for expense in expenses:
-        print('expense["Category"]')
+        for i in expense["amount"]:
+            print(i)
+
+    
 
 def add_expense():
     global expenses
