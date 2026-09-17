@@ -27,12 +27,14 @@ def add_expense():
         "description": description,
     }
     expenses.append(entry)
-    print("expense added successfully\n")
+    print("expense added successfully!\n")
 
 
 def view_expenses():
     global expenses
     for expense in expenses:
+        for i, expense in enumerate(expenses, 1):
+            print(f"Expense #{i}")
         print("-------------------------")
         print(f"Category: {expense['category']}")
         print(f"Amount: ₹{expense['amount']}")
