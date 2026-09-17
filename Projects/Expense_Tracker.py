@@ -71,7 +71,7 @@ def main():
             print("What do you want to do? ")
             print("1.Add Expense")
             print("2.Your total Expense")
-            print("Show your expenses")
+            print("3.Show your expenses")
             what = input("> ")
 
             if what.startswith("1"):
