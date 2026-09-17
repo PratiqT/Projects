@@ -37,9 +37,9 @@ def view_expenses():
         print("╔═════════════════════════════════════╗")
         print(f"║        EXPENSE #{i:<20}║")
         print("╠═════════════════════════════════════╣")
-        print(f"║ Category: {expense['category']:<20}║")
-        print(f"║ Amount: ₹{expense['amount']:<20}║")
-        print(f"║ Description: {expense['description']:<16}║")
+        print(f"║ Category: {expense['category']:<20}      ║")
+        print(f"║ Amount: ₹{expense['amount']:<20}       ║")
+        print(f"║ Description: {expense['description']:<16}       ║")
         print("╚═════════════════════════════════════╝")
 
      
