@@ -29,20 +29,18 @@ def add_expense():
     expenses.append(entry)
     print("expense added successfully!\n")
 
-
+#desiner way to show the Expense
 def view_expenses():
     global expenses
     
     for i, expense in enumerate(expenses, 1):
-           for i, expense in enumerate(expenses, 1):
-
-            print("╔═════════════════════════════════════╗")
-            print(f"║        EXPENSE #{i:<20}║")
-            print("╠═════════════════════════════════════╣")
-            print(f"║ Category: {expense['category']:<20}║")
-            print(f"║ Amount: ₹{expense['amount']:<20}║")
-            print(f"║ Description: {expense['description']:<16}║")
-            print("╚═════════════════════════════════════╝")
+        print("╔═════════════════════════════════════╗")
+        print(f"║        EXPENSE #{i:<20}║")
+        print("╠═════════════════════════════════════╣")
+        print(f"║ Category: {expense['category']:<20}║")
+        print(f"║ Amount: ₹{expense['amount']:<20}║")
+        print(f"║ Description: {expense['description']:<16}║")
+        print("╚═════════════════════════════════════╝")
 
      
 
