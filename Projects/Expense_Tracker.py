@@ -29,6 +29,14 @@ def add_expense():
     expenses.append(entry)
     print("expense added successfully\n")
 
+
+def view_expenses():
+    global expenses
+    for expense in expenses:
+        print(expense["category"])
+     
+
+
 #for now daily and monthly were useless
 def daily():
     dtravel = int(input("how much did you spend on TRAVEL today? "))
@@ -59,13 +67,16 @@ def main():
         while True:
             print("What do you want to do? ")
             print("1.Add Expense")
-            print("2.Show total Expense")
+            print("2.Your total Expense")
+            print("Show your expenses")
             what = input("> ")
 
             if what.startswith("1"):
                 add_expense()
             elif what.startswith("2"):
                 total_expense()
+            elif what.startswith("3"):
+                view_expenses()
     except KeyboardInterrupt:
         print("Thanks for using!")
 
