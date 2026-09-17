@@ -39,7 +39,7 @@ def view_expenses():
             print(f"Category: {expense['category']}")
             print(f"Amount: ₹{expense['amount']}")
             print(f"Description: {expense['description']}")
-            print("-------------------------")
+            print("-------------------------\n")
 
      
 
