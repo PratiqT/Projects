@@ -17,7 +17,7 @@ def add_expense():
     try:
         amount = int(input("Amount: "))
     except ValueError:
-        print("Invalid amount")
+        print("Please Enter Valid amount")
         return
     description = input("Description: ")
 
