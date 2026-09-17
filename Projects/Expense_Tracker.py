@@ -34,6 +34,9 @@ def view_expenses():
     global expenses
     for expense in expenses:
         print(expense["category"])
+        print(expense["amount"])
+        print(expense["description"])
+
      
 
 
