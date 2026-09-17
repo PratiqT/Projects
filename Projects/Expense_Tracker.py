@@ -36,7 +36,7 @@ def view_expenses():
     for i, expense in enumerate(expenses, 1):
             print(f"╔═════════════════════════════════════╗")
             print(f"║        EXPENSE #{i}                 ║")
-            print("f╠═════════════════════════════════════╣")
+            print(f"╠═════════════════════════════════════╣")
             print(f"║Category:  {expense['category']}     ║")
             print(f"║Amount:     ₹{expense['amount']}     ║")
             print(f"║Description: {expense['description']}║")
