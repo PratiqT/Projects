@@ -91,7 +91,7 @@ def main():
 if __name__ == "__main__":
     main()
 
-# start with index you snd whatapp
+# will add GUI form now 
 
 
 
