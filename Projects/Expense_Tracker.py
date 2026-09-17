@@ -33,9 +33,11 @@ def add_expense():
 def view_expenses():
     global expenses
     for expense in expenses:
-        print(expense["category"])
-        print(expense["amount"])
-        print(expense["description"])
+        print("-------------------------")
+        print(f"Category: {expense['category']}")
+        print(f"Amount: ₹{expense['amount']}")
+        print(f"Description: {expense['description']}")
+        print("-------------------------")
 
      
 
