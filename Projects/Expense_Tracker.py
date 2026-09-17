@@ -1,11 +1,15 @@
 
 expenses = []
+
+
 #Total expense calculate and print
 def total_expense():
     amount = 0
     for expense in expenses:
         amount += expense["amount"]
-        print(f"Your total Expense: {amount}\n\n")           
+        print(f"Your total Expense: {amount}\n\n")  
+
+ #This function adds the Expenses                
 def add_expense():
     global expenses
 
@@ -24,6 +28,8 @@ def add_expense():
     }
     expenses.append(entry)
     print("expense added successfully\n")
+
+#for now daily and monthly were useless
 def daily():
     dtravel = int(input("how much did you spend on TRAVEL today? "))
     dfood = int(input("how much did you spend on FOOD today? "))
